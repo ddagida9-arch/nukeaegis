@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#02040a">
+<title>오프라인 | NUKE AEGIS</title>
+<link rel="icon" href="/icons/icon.svg" type="image/svg+xml">
+<style>
+  :root { color-scheme: dark; }
+  html, body { height: 100%; margin: 0; }
+  body { background: #02040a; color: #e6edf7; font: 16px/1.6 'IBM Plex Sans KR', 'Malgun Gothic', 'Apple SD Gothic Neo', system-ui, sans-serif;
+    display: grid; place-items: center; padding: max(16px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) max(16px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left)); box-sizing: border-box; }
+  main { max-width: 30rem; display: grid; gap: 1rem; text-align: left; }
+  img { width: 72px; height: 72px; border-radius: 16px; }
+  h1 { margin: 0; font-size: 1.4rem; }
+  p { margin: 0; color: #a9b8cc; }
+  ul { margin: 0; padding-left: 1.2rem; color: #a9b8cc; }
+  .warn { border-left: 3px solid #fbbf24; padding: 0.6rem 0.9rem; background: rgba(251, 191, 36, 0.08); color: #fde68a; font-size: 0.92rem; }
+  button { justify-self: start; padding: 0.6rem 1.1rem; border-radius: 0.4rem; border: 0; background: #2fd3f0; color: #04121f; font: 700 1rem inherit; cursor: pointer; }
+  button:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+</style>
+</head>
+<body>
+<main>
+  <img src="/icons/icon-192.png" alt="">
+  <h1>인터넷에 연결되어 있지 않습니다</h1>
+  <p>이 화면은 아직 이 기기에 저장되지 않았습니다. 연결되면 다시 시도하세요.</p>
+  <ul>
+    <li>통합 상황실(<b>/monitor</b>)은 마지막으로 연 화면과 대피 결과, 실내 대피 행동요령을 오프라인에서도 엽니다.</li>
+    <li>지도 타일, 실시간 기상·방사선·재난 정보는 연결이 있어야 표시됩니다.</li>
+  </ul>
+  <p class="warn">실제 비상 상황에서는 행정안전부·지자체의 공식 재난문자와 안내를 따르세요. 이 앱은 교육·훈련용입니다.</p>
+  <button type="button" onclick="location.reload()">다시 시도</button>
+</main>
+</body>
+</html>
